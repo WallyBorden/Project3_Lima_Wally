@@ -41,7 +41,7 @@ final_params_emcee = samples_emcee[-1][-1]
 
 # Plotting results
 plt.figure(figsize=(10, 6))
-plt.plot(x, data, label='True Function + Noise', alpha=0.7)
+plt.plot(x, data, label='Data', alpha=0.7)
 plt.plot(x, model_func(x, *initial_guess), label='Initial Guess', linestyle='--', color='blue', linewidth=2)
 plt.plot(x, model_func(x, *samples[-1]), label='MCMC Fit', linestyle=':', color='red', linewidth=2)
 plt.plot(x, model_func_emcee(x, *final_params_emcee), label='MCMC Fit (emcee)', linestyle=':', color='green', linewidth=2)
