@@ -61,11 +61,12 @@ for i in range(len(initial_guess)):
 plt.xlabel('Iteration')
 plt.tight_layout()
 plt.savefig("markov_chain.png")
-
+plt.show()
 # Create corner plot
 labels = [f'Param {i+1}' for i in range(len(initial_guess))]
 corner.corner(samples, labels=labels, truths=initial_guess, show_titles=True)
 plt.savefig("corner_plot.png")
+plt.show()
 
 
 
