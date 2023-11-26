@@ -28,4 +28,4 @@ plt.ylabel('Y')
 plt.legend()
 plt.grid(True)
 plt.savefig("sp.png")
-
+plt.show()
