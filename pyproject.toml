@@ -1,0 +1,29 @@
+[project]
+name = "project"
+version = "1.0"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "corner",
+    "emcee",
+]
+authors = [
+  { name="aklima_wally", email="aklima@example.com" },
+]
+description = "Package for Project 3"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry]
+[tool.poetry.files]
+generated_data_sp.txt = {include = true}
+
+[project.scripts]
+run_mcmc = "project:main"
+
+[project.urls]
+"Homepage" = "https://github.com/WallyBorden/Project3_Lima_Wally"
